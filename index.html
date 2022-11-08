@@ -32,6 +32,12 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style type="text/css">
+    #btnSend:hover{
+      color: white;
+      font-weight: bolder;
+    }
+  </style>
 </head>
 
 <body>
@@ -745,10 +751,12 @@
           <div class="loading">Loading</div>
           <div class="error-message"></div>
           <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-          <a href="mailto:getinetamare@gmail.com" data-toggle="tooltip" title="Click it to send your email">
-            <i class="text-center bi bi-send">Send</i>
-          </a>
+        </div>         
+          <button type="button" class="btn btn-outline-success offset-5">            
+            <a href="mailto:getinetamare@gmail.com" data-toggle="tooltip" title="Click it to send email">
+              <i class="bi bi-send" id="btnSend">Send</i>
+            </a>
+          </button>
       </form>
     </div>
   </section><!-- End Contact Section -->
