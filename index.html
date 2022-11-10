@@ -56,7 +56,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#about" name="about_getinet" onload="render2About()">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -105,8 +105,6 @@
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>MSC Degree:</strong> <span>Near East University, Turkey
                   </span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Msc In Software
-                    Engineering</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Msc In Software
                     Engineering</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>getinetamare@gmail.com</span></li>
@@ -506,8 +504,8 @@
       </div>
 
     </div>
-  </section><!-- End Resume Section -->
-
+  </section>
+  <!-- End Resume Section -->
   <!-- ======= Services Section ======= -->
   <!-- <section id="services" class="services">
     <div class="container">
@@ -819,7 +817,6 @@
       </form>
     </div>
   </section><!-- End Contact Section -->
-
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
     <!-- You can delete the links only if you purchased the pro version. -->
@@ -838,7 +835,21 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script type="text/javascript">
+    // window
+    // function render2About(){
+    //   alert("Rendering...");
+    // }
+    window.onload = (event) => {
+        setTimeout(check, 5000);
+       
+    };
+    function check(){  
+      // alert("Go to humberger sign right top corner")
+      window.location.href = this.appendTo("index.html#about");
+    
+    }
+  </script>
 </body>
 
 </html>
